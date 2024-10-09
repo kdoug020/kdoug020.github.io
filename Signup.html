@@ -115,7 +115,7 @@
           <div class="gender-option" data-gender="male">Male</div>
           <div class="gender-option" data-gender="custom">Custom</div>
         </div>
-        <button type="submit">Sign Up</button>
+        <button type="submit" onclick="location.href='HomePage.html'">Sign Up</button>
       </form>
       <p class="terms">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
     </div>
@@ -132,7 +132,7 @@
 
     document.getElementById('signupForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      alert('This is a simulated Facebook sign-up page. For security reasons, no actual account will be created.');
+      // alert('This is a simulated Facebook sign-up page. For security reasons, no actual account will be created.');
     });
   </script>
 </body></html>
