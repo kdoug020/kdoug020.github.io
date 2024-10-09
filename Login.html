@@ -1,0 +1,107 @@
+<html><head><base href="Login.html">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Facebook - Connect with friends and the world around you</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  .logo-section {
+    flex: 1;
+    padding-right: 32px;
+  }
+  .login-section {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 20px;
+    max-width: 396px;
+  }
+  h1 {
+    color: #1877f2;
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 1.5rem;
+    color: #1c1e21;
+  }
+  input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 17px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #166fe5;
+  }
+  .create-account {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 16px;
+  }
+  .create-account:hover {
+    background-color: #36a420;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-section">
+      <h1>bookface</h1>
+      <p>Connect with friends and the world around you on bookface.</p>
+    </div>
+    <div class="login-section">
+      <form>
+        <input type="text" placeholder="Email or phone number" required>
+        <input type="password" placeholder="Password" required>
+        <a href ="HomePage.html"></a>
+        <button type="submit">Log In</button>
+      </form>
+      <a href="/HomePage.html" style="display: block; text-align: center; margin: 16px 0; color: #1877f2; text-decoration: none;">Forgot password?</a>
+      <hr style="border: none; border-bottom: 1px solid #dadde1; margin: 20px 0;">
+      <button class="create-account" onclick="location.href='HomePage.html'">Create new account</button>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      <a href ="HomePage.html"></a>
+      // alert('Welcome to bookface');
+    });
+  </script>
+</body></html>

@@ -1,0 +1,138 @@
+<html><head><base href="Login.html">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign Up for Facebook | Facebook</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+  }
+  .container {
+    max-width: 432px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .signup-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 20px;
+  }
+  h1 {
+    color: #1c1e21;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #606770;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  input {
+    width: calc(100% - 22px);
+    padding: 11px;
+    font-size: 15px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .name-inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+  .name-inputs input {
+    width: calc(50% - 26px);
+  }
+  select {
+    width: 100%;
+    padding: 11px;
+    font-size: 15px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  .gender-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .gender-option {
+    flex: 1;
+    padding: 11px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .gender-option.selected {
+    border-color: #1877f2;
+    background-color: #e7f3ff;
+  }
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  button:hover {
+    background-color: #009400;
+  }
+  .terms {
+    font-size: 11px;
+    color: #777;
+    margin-top: 10px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="signup-form">
+      <h1>Sign Up</h1>
+      <p>It's quick and easy.</p>
+      <form id="signupForm">
+        <div class="name-inputs">
+          <input type="text" placeholder="First name" required>
+          <input type="text" placeholder="Surname" required>
+        </div>
+        <input type="text" placeholder="Mobile number or email address" required>
+        <input type="password" placeholder="New password" required>
+        <label for="dob">Date of birth</label>
+        <input type="date" id="dob" required>
+        <label>Gender</label>
+        <div class="gender-options">
+          <div class="gender-option" data-gender="female">Female</div>
+          <div class="gender-option" data-gender="male">Male</div>
+          <div class="gender-option" data-gender="custom">Custom</div>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p class="terms">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+    </div>
+  </div>
+
+  <script>
+    const genderOptions = document.querySelectorAll('.gender-option');
+    genderOptions.forEach(option => {
+      option.addEventListener('click', () => {
+        genderOptions.forEach(opt => opt.classList.remove('selected'));
+        option.classList.add('selected');
+      });
+    });
+
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('This is a simulated Facebook sign-up page. For security reasons, no actual account will be created.');
+    });
+  </script>
+</body></html>
